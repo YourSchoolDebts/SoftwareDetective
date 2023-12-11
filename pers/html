@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Детектив</title>
+        <link rel="stylesheet" href="pers_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="test" id="test"><h4 class="title">Персонажи</h4></div>
+        
+    </body>
+</html>
+
+
+
+<script>
+
+    
+
+
+
+    test.style.cursor = "none";
+    document.addEventListener("DOMContentLoaded", () => {
+            const title = document.querySelector(".title");
+            const cursor = document.createElement("div");
+            const cursorWidth = 170;
+            const cursorHeight = 170;
+            const cursorWidthHover = 100;
+            const cursorHeightHover = 100 ;
+            cursor.classList.add("cursor");
+            document.body.appendChild(cursor);
+            
+
+
+
+            test.addEventListener( "mousemove", (e) => {
+                let x = e.clientX;
+                let y = e.clientY;
+
+                cursor.style.top = (y) + 'px';
+                cursor.style.left = (x) + 'px';
+                cursor.style.width = cursorWidth + 'px';
+                cursor.style.height = cursorHeight + 'px';
+                
+
+
+                
+        })
+    })
+
+
+
+    
+</script>
